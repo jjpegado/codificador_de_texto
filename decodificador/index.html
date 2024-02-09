@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Codificador de texto</title>
+
+</head>
+
+<body>
+    <div class="logo">
+        <nav class="logo__navegation">
+            
+            <div class="logo_alura">
+                <a>
+                    <img src="/img/Vector.png" alt="Logo da Alura">
+                </a>
+                
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="content">
+
+            <div class="content__texto_usuario" >
+                <textarea name="text_user" id="" cols="30" rows="10" placeholder="Digite o seu texto"></textarea>
+                
+            </div>
+            
+            <div class="alerta">
+                <span class="alert"><img src="/img/aviso.png" alt="Icone de exclamação indicando um aviso"> 
+                    Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="botoes">
+                <button onclick=" criptografar()" class="criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="saida">
+
+            <div class="console">
+
+                <div class="output" id="output">
+                </div>
+
+                <div class="inicio" id="msgConsoleInicio">
+                    <img src="/img/images_buscar.jpg" alt="Figura de um lupa">
+                    <p class="nenhumaMensagem">Nenhuma mensagem encontrada</p>
+                    <p class="digiteOTexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="desenvolvedor">
+            <p>Desenvolvidor por <a href="https://www.linkedin.com/in/j%C3%BAlio-soares-984246243/" target="_blank">Julio Soares</a>, 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
